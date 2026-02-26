@@ -1,0 +1,59 @@
+Bien , on dois ajouter deux fonction pour connaitre dans quelles compte on est connecté actuelement et changer de compte  : 
+1- d'abord , il y a dejà un fichier "tiktok_usernames.txt" dont chaque ligne contient un username 
+2- pour connaitre dans quelle compte on se conecte actuelement ,on verifie si le mot "profil" existe sur l'ecran , si il n'existe pas alors on fais un retour et on reverifie son existance et on refais un retour jusqu'a ce qu'il existe sur l'ecran  ; Si le mot "profil" existe on clique sur le coté bas-droite de l'acran . Puis on verifie l'existance de cette image : 3tiret.jpg . Si ce shema d' image existe sur l'ecran , alors on est bien dans le profile et on verifie si l'un des usernames dans le txt existe sur l'ecran . Donc on est connecté sur l'un de ces usernames visible sur l'ecran actuel . 
+3- Pour se connecter à un autre compte , la fonction dois d'abord attendre un parametre "username" : on clique sur : 3tiret.jpg . Pusi il devrait avoir 3 mot qu'on dois cliquer : Paramètres et confidentialité . Si ces 3 mots n'apparait pas apres avoir cliqué sur les 3 tiret apres 3 seconde peut être que le telephone a bugé et on reclique . Apres avoir cliqué sur les 3 mots , on dois verifier la presence de : Confidentialité . Si Confidentialité existe , on sccrole vers le bas jusqu'à a trouver : Changer de Compte .Apres on cliquera sur celuis ci et on dois voir l'un des usernames dans tiktok_usernames.txt , si c'est le cas , on clique sur l'username du parametre du fonction . Si apres 10secondes ou 15secondes on trouve "Acceuil" sur l'ecran , on est connecté , par contre si on trouve "Changer de compte" , on le reclique et on cliquera sur l'username sur lesquel on veux se connecter .
+
+
+
+
+Avant de cliquer sur le prix du tache :
+<a class="do do-task-m btn btn-sm btn-primary btn-block" href="javascript:;" data-task-id="9229939" data-service-type="9" data-do-class="do-task-m" data-getcomment-href="/en/tasks/getcomment/" data-check-count="0" data-max-check-count="2" data-money-text="0.002100">0.002100 <i class="far fa-dollar-sign"></i></a>
+
+Apres avoir cliqué sur le prix du tâche et qu'il ya "Do" :
+<a class="do btn btn-sm btn-primary btn-block btn-success check-task hide" href="javascript:;" data-task-id="9229939" data-service-type="9" data-do-class="do-task-m" data-getcomment-href="/en/tasks/getcomment/" data-check-count="0" data-max-check-count="2" data-money-text="0.002100"><i class="far fa-eye"></i>&nbsp;Check</a>
+
+
+
+
+
+
+
+
+                        <div class="empty text-center">
+                            Кажется, пока нет доступных заданий для этого аккаунта. Выберите другой аккаунт для выполнения заданий или попробуйте чуть позже.                            <div class="btns">
+                                <form name="UserResetAccount" onsubmit="event.preventDefault(); return false;">
+                                    <input type="hidden" name="UserResetAccount[nonce]" value="33810e65f4">
+                                    <input type="hidden" name="UserResetAccount[network]" value="1">
+                                    <button type="submit" class="btn btn-reset_account btn--yellow" name="UserResetAccount[submit]" value="reset">Выбрать другой аккаунт<i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    
+
+
+
+for more details. Fallback font will be used while loading: https://getlike.io/assets/b8af30b2/v2/dashboard/common/webfonts/fa-brands-400.woff2
+like/:465 
+            
+            
+           GET https://mixinsta.ru/media/storage/image.jpg?url=https%3A%2F%2Finstagram.frix7-1.fna.fbcdn.net%2Fv%2Ft51.2885-19%2F280553338_3281249975477520_9143896291530293684_n.jpg%3Fefg%3DeyJybWQiOiJpZ19hbmRyb2lkX21vYmlsZV9uZXR3b3JrX3N0YWNrX2JhY2t0ZXN0X3YyMDdfMTpjb250cm9sIn0%26_nc_ht%3Dinstagram.frix7-1.fna.fbcdn.net%26_nc_cat%3D100%26_nc_ohc%3Dv6jdjJOTrVcAX8NNFzj%26edm%3DAEF8tYYBAAAA%26ccb%3D7-4%26oh%3D00_AT9dNgVchjnurkd9eh1pXRf7TgSeSDV5WYXOS6zg8zKxCg%26oe%3D628284B6%26_nc_sid%3Da9513d 404 (Not Found)Understand this error
+content.js:291 Uncaught ReferenceError: loadDoneUrls is not defined
+    at content.js:291:13
+
+
+
+
+
+
+
+
+
+
+
+- quand il y a un tâche à traiter sur smmkingdomtasks et il y a aussi un tâche à traiter sur Getlikeee_bot , on dois prioriser celle de smmkingdomtasks
+-  si un tâche dans getlike est entrain d'etre effectué , on ne le coupe pas si il y a un tâche reçu sur smmkingdomtasks mais on attend que ce seul tâche soit finit et quand ce seul tâche sera finit qu'on fera la tâche sur smmkingdomtasks qui attend .
+- SI on envoye "completed" sur smmkingdomtasks et puis il y a encore un prochain tâche alors on fais encore ce tâche car comme j'ai dis c'est le priorité . Si apres avoir envoyé "completed" sur smmkingdomtasks et qu'il n'y a pas de tâche qu'il faut qu'on traite la tâche de Getlikeee_bot
+- aucun fonctionnalité sur chaque fichier doit être retiré pour chaque bot telegram correspondant qu'il traite .
+- Si le comtpe tiktok actuel qui fait du tâche pour smmkingdomtasks est dans clone 1 de multi app , donc le compte qui fait le tâche pour smmkingdomtasks dois être dans un autre clone que clone 1 .
+- Si vous voulez aussi , on pourrait ne pas toucher ces deux fichier mais c'est miLike3 qu'on modifie pour gerer ces question de priorité avec un tâche en file d'attente
+- pour l'extention , on l'ameliorera apres pour le guider depuis le telegram "quels compte utiliser pour faire la tâches" et j'inspecterais et vous dirai l'etape pour changer de compte tiktok à effectuer les tâches 
